@@ -13,6 +13,17 @@ Things you may want to cover:
 
 * Database creation
 
+##userテーブル
+
+| Left align | Right align | Center align |
+|:-----------|------------:|:------------:|
+| This       | This        | This         |
+| column     | column      | column       |
+| will       | will        | will         |
+| be         | be          | be           |
+| left       | right       | center       |
+| aligned    | aligned     | aligned      |
+
 * Database initialization
 
 * How to run the test suite
