@@ -21,7 +21,9 @@ Things you may want to cover:
 |nickname|string|null: false, unique: true, index: true|
 
 ### Association
-- has_many :groups, through: :members
+- has_many : groups, through: :members
+- has_many : comments
+- has_many : members
 
 ## groupテーブル
 
