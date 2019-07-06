@@ -41,6 +41,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |text|text|null: false, foreign_key: true|
+|image|string|foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
