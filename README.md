@@ -42,7 +42,6 @@ Things you may want to cover:
 |------|----|-------|
 |text|text||
 |image|string||
-|image|string||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
