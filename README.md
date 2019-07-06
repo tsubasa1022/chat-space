@@ -18,7 +18,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |email|string|null: false, unique: true|
-|nickname|string|null: false, unique: true|
+|nickname|string|null: false, unique: true, index: true|
 
 ### Association
 - has_many :groups, through: :members
