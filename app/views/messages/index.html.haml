@@ -1,2 +1,31 @@
-%h1 Messages#index
-%p Find me in app/views/messages/index.html.haml
+!!!5
+%html
+  %head
+
+  %body
+  .flash-box
+    .flash-box__notice 
+      グループを作成しました
+  .wrapper
+    .chat-side
+      .side-header
+        .side-header__box
+          %p.side-header__box__user-name 
+            test-usser
+          %ul.side-header__box__menu
+            %li.side-header__box__menu__new-group
+              = link_to 'fa fa-edit', '/groups/new' 
+            %li.side-header__box__menu__edit-user
+              = link_to 'fa fa-cog','/users/998/edit' 
+        .groups
+    .chat-main
+      .main-header
+        .main-header__left-box
+          %h2.main-header__left-box__cerrent-group 
+            test-group
+          %ul.main-header__left-box__member-list 
+            Member
+            %li.main-header__left-box__member-list__member 
+              test-member
+        = link_to  '/groups/2298/edit' do
+          .main__header__edit-btn
