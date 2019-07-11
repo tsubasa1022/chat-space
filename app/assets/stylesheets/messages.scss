@@ -8,3 +8,31 @@
     color: white;
   }
 }
+
+.wrapper{
+  .chat-side{
+    width: 300px;
+    background-color: #2f3e51;
+    float: left;
+    height: 100vh;
+    .side-header{
+      background-color: #253141;
+      font-size: 16px;
+      height: 82px;
+      font-weight: bold;
+      color: #FFFFFF;
+      padding: 0 20px;
+      &__box{
+        display: flex;
+        width: 100%;
+        line-height: 82px;
+        &__user-name{
+        float: left;
+        }  
+        &__menu{
+          float: right;
+          display: flex;
+        }
+      }
+    }
+    
