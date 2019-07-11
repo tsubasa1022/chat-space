@@ -17,15 +17,19 @@
               = link_to 'fa fa-edit', '/groups/new' 
             %li.side-header__box__menu__edit-user
               = link_to 'fa fa-cog','/users/998/edit' 
-        .groups
-    .chat-main
-      .main-header
-        .main-header__left-box
-          %h2.main-header__left-box__cerrent-group 
+      .groups
+        .groups__group
+          %p.groups__group--group-name 
             test-group
-          %ul.main-header__left-box__member-list 
-            Member
-            %li.main-header__left-box__member-list__member 
-              test-member
-        = link_to  '/groups/2298/edit' do
-          .main__header__edit-btn
+          %p.groups__group--group-message
+            さようなら
+        .groups__group
+          %p.groups__group--group-name 
+            sample-group
+          %p.groups__group--group-message
+            hello!
+        .groups__group
+          %p.groups__group--group-name 
+            example
+          %p.groups__group--group-message
+            まだメッセージがありません
