@@ -18,7 +18,7 @@
     .side-header{
       background-color: #253141;
       font-size: 16px;
-      height: 82px;
+      height: 100px;
       font-weight: bold;
       color: #FFFFFF;
       padding: 0 20px;
@@ -35,4 +35,65 @@
         }
       }
     }
-    
+    .groups{
+      padding: 20px 20px 0;
+      height: calc(100vh - 82px);
+      &__group{
+        width: 100%;
+        padding-bottom: 40px;
+        font-weight: bold;
+        color: #FFFFFF;
+        &--group-name{
+          font-size: 15px;
+          padding-bottom: 5px;
+        }
+        &--group-message{
+          font-size: 11px;
+        }
+        }
+      }
+    }
+
+  .chat-main{
+    width: calc(100vw - 300px);
+    float: right;
+    height: 100vh;
+    .main-header{
+      height: 100px;
+      padding: 0 40px;
+      border-bottom: #eeeeee;
+      &__left-box{
+        float: left;
+        &__current-group{
+          padding-top: 35px;
+          font-size: 20px;
+        }
+        &__member-list{
+          display: flex;
+          font-size: 12px;
+          color:#999999;
+          bottom: 0px;
+          padding-top: 15px;
+          &--name{
+            
+          }
+        }
+      }
+      &__edit-btn{
+        height: 38px;
+        float: right;
+        border: solid 1px  #38AEF0;
+        color: #38AEF0;
+        margin-top: 28px;
+        &--text{
+          padding: 0 20px 0;
+          line-height: 40px;
+        }
+      }
+    }
+    .message{
+      background-color: #fafafa
+      hei
+    }
+  }
+}
