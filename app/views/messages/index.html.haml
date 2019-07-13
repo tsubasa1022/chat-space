@@ -14,9 +14,11 @@
             test-usser
           %ul.side-header__box__menu
             %li.side-header__box__menu__new-group
-              = link_to 'fa fa-edit', '/groups/new' 
+              = link_to '/groups/new' do
+                = fa_icon "edit"
             %li.side-header__box__menu__edit-user
-              = link_to 'fa fa-cog','/users/998/edit' 
+              = link_to '/users/998/edit' do
+                = fa_icon "cog"
       .groups
         .groups__group
           %p.groups__group--group-name 
@@ -64,5 +66,16 @@
               2019/07/11(fri) 13:30
           .message__text
             さようなら
+      .form
+        .new-message
+          %form.form-comment
+            %input{class: "form-comment__text",placeholder: "text a message"}
+            %label.form-comment__img
+              = fa_icon 'image'
+              %input{type: "file", class: "form-comment__file", name: "message[img]", id: "message__img"}
+          .send-btn
+            %p.send-btn__text
+              Send
+              
 
 
