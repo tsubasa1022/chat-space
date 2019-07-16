@@ -99,9 +99,11 @@ $mainTextColor:#434A54;
         border: solid 1px  $mainBlue;
         color: $mainBlue;
         margin-top: 28px;
+        padding: 0 20px 0;
+        line-height: 40px;
         &--text{
-          padding: 0 20px 0;
-          line-height: 40px;
+          
+          
         }
       }
     }
