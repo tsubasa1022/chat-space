@@ -12,18 +12,10 @@
           = link_to 'users/1130/edit' do
             = fa_icon "cog"
   .groups
-    .groups__group
-      %p.groups__group--group-name 
-        test-group
-      %p.groups__group--group-message
-        さようなら
-    .groups__group
-      %p.groups__group--group-name 
-        sample-group
-      %p.groups__group--group-message
-        hello!
-    .groups__group
-      %p.groups__group--group-name 
-        example
-      %p.groups__group--group-message
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      = link_to group_path(group) do
+        .group
+          %p.group__name
+            = group.name
+          %p.group__message
+            メッセージはまだありません
