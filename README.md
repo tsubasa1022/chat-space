@@ -22,9 +22,9 @@ Things you may want to cover:
 |nickname|string|null: false, unique: true, index: true|
 
 ### Association
-- has_many : groups, through: :members
+- has_many : groups, through: :group_users
 - has_many : comments
-- has_many : members
+- has_many : groups
 
 ## groupテーブル
 
@@ -33,9 +33,9 @@ Things you may want to cover:
 |name|string|null: false, unique: true|
 
 ### Association
-- has_many :users, through: :members
+- has_many :users, through: :group_users
 - has_many :comments
-- has_many : members
+- has_many : users
 
 ## commentsテーブル
 
@@ -50,7 +50,7 @@ Things you may want to cover:
 - belongs_to :group
 - belongs_to :user
 
-## membersテーブル
+## group_usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|

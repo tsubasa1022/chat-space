@@ -9,6 +9,7 @@ $mainTextColor:#434A54;
 
 .chat-side a{
   color:$subWhite;
+  text-decoration: none;
 }
 
 .flash-box{
@@ -53,15 +54,14 @@ $mainTextColor:#434A54;
     .groups{
       padding: 20px 20px 0;
       height: calc(100vh - 100px);
-      &__group{
+      .group{
         width: 100%;
-        margin-bottom: 40px;        
-        &--group-name{
+        margin-bottom: 40px;
+        &__name{
           font-size: 15px;
           margin-bottom: 5px;
-          font-weight: bold;
         }
-        &--group-message{
+        &__message{
           font-size: 11px;
         }
         }
@@ -99,9 +99,11 @@ $mainTextColor:#434A54;
         border: solid 1px  $mainBlue;
         color: $mainBlue;
         margin-top: 28px;
+        padding: 0 20px 0;
+        line-height: 40px;
         &--text{
-          padding: 0 20px 0;
-          line-height: 40px;
+          
+          
         }
       }
     }

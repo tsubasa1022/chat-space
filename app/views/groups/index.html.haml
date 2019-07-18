@@ -3,7 +3,7 @@
     %meta{content: "text/html; charset=utf-8", "http-equiv": "Content-Type"}/
   %body
   .wrapper
-    = render "side_bar"
+    = render 'shared/side_bar'
 
     .chat-main
       .main-header
@@ -14,10 +14,9 @@
             Member：
             %li.main-header__left-box__member-list--name
               test-member
-        .main-header__edit-btn
-          %p.main-header__edit-btn--text
+        = link_to 'groups/1/edit' do
+          .main-header__edit-btn
             Edit
-            
       .messages
         .message
           .message__upper-info
