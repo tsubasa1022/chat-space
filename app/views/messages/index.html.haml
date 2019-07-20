@@ -35,15 +35,11 @@
           .message__text
             さようなら
       .form
-        .new-message
-          %form.form-comment
-            %input{class: "form-comment__text",placeholder: "text a message"}
-            %label.form-comment__img
-              = fa_icon 'image'
-              %input{type: "file", class: "form-comment__file", name: "message[img]", id: "message__img"}
-          .send-btn
-            %p.send-btn__text
-              Send
-              
-
-
+        = form_for [@group, @message] do |f|
+          .new-message
+            .form-comment
+              = f.text_field :content, class: 'form-comment__text', placeholder: 'type a message'
+              = f.label :image, class: 'form-comment__image' do
+                = fa_icon 'picture-o', class: 'img'
+                = f.file_field :image, class: 'form-comment__file'
+            = f.submit 'Send', class: 'send-btn'
