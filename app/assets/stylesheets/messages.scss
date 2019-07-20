@@ -153,8 +153,8 @@ $mainTextColor:#434A54;
             padding: 0 40px 0 10px;
             width: 100%;
           }
-          &__img{
-            margin-right: auto;
+          &__image{
+           margin-right: auto;
            position: absolute;
            right: 10px;
            cursor: pointer;
@@ -163,17 +163,17 @@ $mainTextColor:#434A54;
             display:none;
           }
         }
-        .send-btn{
-          background-color: $mainBlue;
-          margin-left: 15px;
-          line-height: 50px;
-          color: $mainWhite;
-          float: right;
-          width: 100px;
-          text-align: center;
-          padding: 0 30px;
-          margin-left: 15px;
-        }
+      .send-btn{
+        background-color: $mainBlue;
+        margin-left: 15px;
+        line-height: 50px;
+        color: $mainWhite;
+        float: right;
+        width: 100px;
+        text-align: center;
+        padding: 0 30px;
+        margin-left: 15px;
+      }
       }
      }
   }
