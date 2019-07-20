@@ -7,6 +7,11 @@ $subWhite: white;
 $mainBlue:#38AEF0; 
 $mainTextColor:#434A54; 
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
+
 .chat-side a{
   color:$subWhite;
   text-decoration: none;
@@ -111,6 +116,7 @@ $mainTextColor:#434A54;
       background-color: #fafafa;
       height: calc(100vh  - 190px);
       padding: 46px 40px;
+      overflow: scroll;
       .message{
         padding-bottom: 40px;
         &__upper-info{
@@ -127,7 +133,7 @@ $mainTextColor:#434A54;
             margin-left: 10px;
           }
         }
-        &__text{
+        &__lower-info{
           font-size: 14px;
           color:  $mainTextColor;
           margin-bottom:10px;
@@ -153,8 +159,8 @@ $mainTextColor:#434A54;
             padding: 0 40px 0 10px;
             width: 100%;
           }
-          &__img{
-            margin-right: auto;
+          &__image{
+           margin-right: auto;
            position: absolute;
            right: 10px;
            cursor: pointer;
@@ -163,17 +169,17 @@ $mainTextColor:#434A54;
             display:none;
           }
         }
-        .send-btn{
-          background-color: $mainBlue;
-          margin-left: 15px;
-          line-height: 50px;
-          color: $mainWhite;
-          float: right;
-          width: 100px;
-          text-align: center;
-          padding: 0 30px;
-          margin-left: 15px;
-        }
+      .send-btn{
+        background-color: $mainBlue;
+        margin-left: 15px;
+        line-height: 50px;
+        color: $mainWhite;
+        float: right;
+        width: 100px;
+        text-align: center;
+        padding: 0 30px;
+        margin-left: 15px;
+      }
       }
      }
   }
