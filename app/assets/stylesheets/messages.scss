@@ -7,6 +7,11 @@ $subWhite: white;
 $mainBlue:#38AEF0; 
 $mainTextColor:#434A54; 
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
+
 .chat-side a{
   color:$subWhite;
   text-decoration: none;
@@ -111,6 +116,7 @@ $mainTextColor:#434A54;
       background-color: #fafafa;
       height: calc(100vh  - 190px);
       padding: 46px 40px;
+      overflow: scroll;
       .message{
         padding-bottom: 40px;
         &__upper-info{
@@ -127,7 +133,7 @@ $mainTextColor:#434A54;
             margin-left: 10px;
           }
         }
-        &__text{
+        &__lower-info{
           font-size: 14px;
           color:  $mainTextColor;
           margin-bottom:10px;
