@@ -134,9 +134,11 @@ $mainTextColor:#434A54;
           }
         }
         &__lower-info{
+          &__text{
           font-size: 14px;
           color:  $mainTextColor;
           margin-bottom:10px;
+          }
         }
       }
     }
