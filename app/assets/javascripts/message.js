@@ -38,8 +38,8 @@ $(function(){
       processData: false,
       contentType: false
     })
-    .done(function(data){
-      var html = buildHTML(data);
+    .done(function(message){
+      var html = buildHTML(message);
       $('.messages').append(html);
       $(".new_message")[0].reset();
       $('.send-btn').attr('disabled', false);
