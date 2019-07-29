@@ -27,7 +27,7 @@ class GroupsController < ApplicationController
   end
 
   def search
-    @group = Group.where('name LIKE(?)', "%#{params[:keyword]}%").limit(20)
+    @group = User.where('name LIKE(?)', "%#{params[:keyword]}%").limit(20)
     respond_to do
       format.html
       format.json
