@@ -43,8 +43,6 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'faker'
   gem 'pry-rails'
-  gem 'pry-byebug'
-  gem 'pry-doc'
 end
 
 group :development do
