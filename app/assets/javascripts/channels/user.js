@@ -61,7 +61,6 @@ $(function() {
   });
     
     $('#user-search-result').on('click', ".user-search-add", function(){
-      console.log(this);
       var userInfo = $(this).data();
       var html = userAppHtml(userInfo)
       $('.chat-group-users').append(html)
