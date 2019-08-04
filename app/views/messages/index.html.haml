@@ -13,6 +13,9 @@
         %ul.main-header__left-box__member-list 
           Member：
           %li.main-header__left-box__member-list--name
+            - @group.users.each do |user|
+              - if current_user.id != user.id
+                = user.name
             = current_user.name
       = link_to edit_group_path(@group) do
         .main-header__edit-btn
