@@ -59,8 +59,7 @@ $(function(){
       .done(function(messages){
         if(messages !== undefined){
           messages.forEach(function(message){
-          
-          var insertHTML = buildMessageHTML(message);
+          var insertHTML = buildHTML(message);
           $('.messages').append(insertHTML);
           $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
           
