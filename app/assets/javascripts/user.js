@@ -29,7 +29,7 @@ $(function() {
         return html
   };
 
-  $('.chat-group-form__input').on('keyup paste',function(e){
+  $('#user-search-field').on('keyup paste',function(e){
     e.preventDefault();
     var input = $(this).val();
     if(input.length !== 0){
