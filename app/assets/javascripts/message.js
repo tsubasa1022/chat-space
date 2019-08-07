@@ -46,28 +46,7 @@ $(function(){
      })
    })
 
-   var buildMessageHTML = function(message) {
-    var img = message.image ? `<img class="__image" src=${ message.image }>` : ``;
-      var html = `<div class="message" data-message-id= ${message.message_id} >
-                                <div class="message__upper-info">
-                                  <p class="message__upper-info--user"> 
-                                    ${message.user_name} 
-                                  </p>
-                                  <p class="message__upper-info--date">
-                                    ${message.time}
-                                  </p>
-                                </div>
-                                <div class="message__lower-info">
-                                  <p class="message__lower-info__text">
-                                    ${message.content}
-                                  </p>
-                                </div>
-                                <div class="__image">
-                                  ${ img }
-                                </div>
-                              </div>`
-    return html;
-  }
+  
   var reloadMessages = function() {
     if (window.location.href.match(/\/groups\/\d+\/messages/)){
       var last_message_id = $('.message:last').data('message-id'); 
