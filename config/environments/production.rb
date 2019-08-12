@@ -26,7 +26,7 @@ Rails.application.configure do
   config.assets.compile = false
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
-  server '54.199.144.25', user: 'ec2-user', roles: %w{app db web}
+  
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
 
