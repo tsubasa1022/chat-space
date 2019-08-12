@@ -20,7 +20,7 @@ set :rbenv_ruby, '2.5.1'
 # Default value for :pty is false
 # set :pty, true
 set :ssh_options, auth_methods: ['publickey'],
-                  keys: ['~/.ssh/id-rsa']
+                  keys: ['~/.ssh/chatspace']
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml"
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
