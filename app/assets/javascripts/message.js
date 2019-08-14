@@ -18,8 +18,8 @@ $(function(){
                              <div class="__image">
                                 ${ img }
                              </div>
-                         </div>`
-            return html
+                         </div>`;
+            return html;
       }
   $(".new_message").on('submit', function(e){
     e.preventDefault();
